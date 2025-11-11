@@ -22,13 +22,9 @@ async function getSettings() {
 }
 
 export default async function Home() {
-  const posts = await getPosts();
-  const settings = await getSettings();
 
   return (
     <CatalogHomePage
-      posts={posts}
-      settings={settings}
     />
   );
 }
